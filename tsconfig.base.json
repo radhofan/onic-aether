@@ -6,9 +6,10 @@
     "baseUrl": ".",
     "noEmit": true,
     "paths": {
-      "@onic/argus-frontend/*": ["packages/apps/argus/frontend/src/*"],
       "@onic/components/*": ["packages/components/src/*"],
-      "@onic/utils/*": ["packages/utils/src/*"]
+      "@onic/utils/*": ["packages/utils/src/*"],
+      "@onic/argus-frontend/*": ["packages/apps/argus/frontend/src/*"],
+      "@onic/shinigami-frontend/*": ["packages/apps/shinigami/frontend/src/*"]
     },
     "jsx": "preserve",
     "esModuleInterop": true,

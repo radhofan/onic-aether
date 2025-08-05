@@ -4,9 +4,10 @@
     "composite": true
   },
   "references": [
-    { "path": "./packages/apps/argus/frontend" },
     { "path": "./packages/components" },
-    { "path": "./packages/utils" }
+    { "path": "./packages/utils" },
+    { "path": "./packages/apps/argus/frontend" },
+    { "path": "./packages/apps/shinigami/frontend" }
   ],
   "include": []
 }
