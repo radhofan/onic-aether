@@ -1,0 +1,16 @@
+{
+  "name": "@onic/components",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": [
+    "src"
+  ]
+}

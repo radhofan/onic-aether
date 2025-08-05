@@ -1,0 +1,32 @@
+1. kontrak sedang berjalan                                                     # DONE
+   a. jumlah kontrak
+2. kontrak selesai                                                             # DONE
+   a. mana yang sudah terbayar semua dan mana yang msh pending 
+3. Kolom SP                                                                    # DONE
+4. Total proyek per vendor                                                     # DONE
+5. Case susah: - kontrak lama (ex 15 bln)                                      # DONE
+   Case susah: - filter vendor                                                 # DONE
+   Case susah: - filter kontrak                                                # DONE
+6. CSS                                                                         
+7. Animation                                                                   # DONE
+8. fix github                                                                  # DONE
+9. filter kontrak / vendor                                                     # DONE
+10. termin amandemen kontrak?                                                  # DONE
+11. eslint errors                                                              # DONE
+12. atomic design                                                                      # NO
+13. ci github actions                                                          # DONE
+14. vitest                                                                             # NO
+15. authentication                                                             # DONE
+16. rbac logic                                                                 # DONE
+17. rbac view                                                                  # DONE                            
+18. input validation                                                           # DONE
+19. auth.ts                                                                    # DONE
+20. rbac access                                                                # DONE           
+21. fix total bidang                                                           # DONE
+22. unit/integration                                                                   # NO
+23. e2e                                                                                # NO
+24. xss sanitation                                                             # DONE
+25. amandemen-> salah satu harus wajib direksi,pengawas,tanggal,nilai          # DONE
+26. upload dokumen ganti tanggal pembayaran                                    # DONE
+27. bidang aplikasi gabisa input termin pembayaran, bidang perencanaan bisa    # DONE
+28. bidang aplikasi bisa input kontrak baru, bidang perencanaan gabisa         # DONE

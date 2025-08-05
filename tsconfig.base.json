@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "@onic/argus-frontend/*": ["packages/apps/argus/frontend/src/*"],
+      "@onic/components/*": ["packages/components/src/*"],
+      "@onic/utils/*": ["packages/utils/src/*"]
+    },
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  }
+}
