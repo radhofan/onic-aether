@@ -6,7 +6,11 @@ import { execa } from 'execa';
 const apps = ['argus', 'shinigami'];
 const frontendPorts = {
   argus: 3000,
-  shinigami: 3001,
+  shinigami: 3000,
+};
+const backendPorts = {
+  argus: 4000,
+  shinigami: 4000,
 };
 
 const { app } = await inquirer.prompt([
@@ -37,6 +41,20 @@ const { runBackend } = await inquirer.prompt([
   },
 ]);
 
+let backendPort;
+if (runBackend) {
+  const answer = await inquirer.prompt([
+    {
+      type: 'input',
+      name: 'backendPort',
+      message: 'Select backend port:',
+      default: backendPorts[app],
+      validate: (input) => !isNaN(parseInt(input)) || 'Port must be a number',
+    },
+  ]);
+  backendPort = answer.backendPort;
+}
+
 console.log(`\nStarting ${app}...`);
 
 const frontendCommand = [
@@ -46,6 +64,7 @@ const frontendCommand = [
   '--port',
   frontendPort,
 ];
+
 const backendCommand = ['workspace', `${app}-backend`, 'dev'];
 
 const subprocesses = [];
@@ -53,7 +72,16 @@ const subprocesses = [];
 subprocesses.push(execa('yarn', frontendCommand, { stdio: 'inherit' }));
 
 if (runBackend) {
-  subprocesses.push(execa('yarn', backendCommand, { stdio: 'inherit' }));
+  subprocesses.push(
+    execa('yarn', backendCommand, {
+      stdio: 'inherit',
+      shell: true,
+      env: {
+        ...process.env,
+        PORT: backendPort.toString(),
+      },
+    })
+  );
 }
 
 await Promise.all(subprocesses);

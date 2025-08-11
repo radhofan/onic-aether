@@ -23,15 +23,15 @@ import {
   AmandemenKontrak,
   SuratPeringatan,
   Vendor,
-} from '@/types/types';
-import ViewPembayaranModal from '@/app/components/ViewPembayaran';
-import EvaluasiVendorModal from '@/app/components/EvaluasiVendor';
-import InputAmandemenModal from '@/app/components/InputAmandemen';
-import InputSuratPeringatanModal from '@/app/components/InputSuratPeringatan';
+} from '@onic/argus-frontend/types/types';
+import ViewPembayaranModal from '@onic/argus-frontend/app/components/ViewPembayaran';
+import EvaluasiVendorModal from '@onic/argus-frontend/app/components/EvaluasiVendor';
+import InputAmandemenModal from '@onic/argus-frontend/app/components/InputAmandemen';
+import InputSuratPeringatanModal from '@onic/argus-frontend/app/components/InputSuratPeringatan';
 import { motion, AnimatePresence } from 'framer-motion';
-import { kontrak, vendor } from '@/types/dummy';
+import { kontrak, vendor } from '@onic/argus-frontend/types/dummy';
 import { useStore } from 'zustand';
-import { authStore } from '@/stores/useAuthStore';
+import { authStore } from '@onic/argus-frontend/stores/useAuthStore';
 
 const { Title, Text } = Typography;
 

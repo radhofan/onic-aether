@@ -19,7 +19,7 @@ import dayjs from 'dayjs';
 import { CheckCircleOutlined, InboxOutlined } from '@ant-design/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useStore } from 'zustand';
-import { authStore } from '@/stores/useAuthStore';
+import { authStore } from '@onic/argus-frontend/stores/useAuthStore';
 
 const { Title, Text } = Typography;
 const { Option } = Select;

@@ -7,13 +7,13 @@ import type { ColumnsType, ColumnType } from 'antd/es/table';
 import { SearchOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { vendor, kontrak } from '@/types/dummy';
+import { vendor, kontrak } from '@onic/argus-frontend/types/dummy';
 import { useStore } from 'zustand';
-import { authStore } from '@/stores/useAuthStore';
+import { authStore } from '@onic/argus-frontend/stores/useAuthStore';
 
 const { Title } = Typography;
 
-import type { Vendor } from '@/types/types';
+import type { Vendor } from '@onic/argus-frontend/types/types';
 
 export default function DaftarVendorPage() {
   const router = useRouter();
