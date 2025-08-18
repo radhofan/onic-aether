@@ -68,6 +68,7 @@ const users = [
  * STEP 4: Set cookie
  * STEP 5: Return JSON response
  */
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     // STEP 1
